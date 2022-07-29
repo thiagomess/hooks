@@ -5,7 +5,7 @@ local_branch="$(git rev-parse --abbrev-ref HEAD)"
 
 valid_branch_regex="^(master|develop)$|^([A-Za-z]{4,})/(task|story|epic|tech)/([A-Za-z]{3}-[0-9]+[-A-Za-z0-9]*)$|^(hotfix)/.{3,}$"
 
-message="There is something wrong with your branch name. Branch names in this project must adhere to this contract: $valid_branch_regex. Your commit will be rejected. You should rename your branch to a valid name and try again."
+message="Seu commit foi rejeitado. Os nomes das branches permitidas neste projeto devem seguir a este formato: $valid_branch_regex. Você deve renomear sua branch para um nome válido e tentar novamente. Para mais informações leia o Readme do projeto. https://extendsclass.com/regex/ac4e4d7"
 
 if [[ ! $local_branch =~ $valid_branch_regex ]]
 then
