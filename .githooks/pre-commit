@@ -11,6 +11,6 @@ if [[ ! $local_branch =~ $valid_branch_regex ]]
 then
     echo "$message"
     exit 1
-fi
+fi 
 
 exit 0
